@@ -147,6 +147,9 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate, WKNavi
         panGestureRecognizer = UIPanGestureRecognizer()
         panGestureRecognizer.delegate = self
         panGestureRecognizer.addTarget(self, action: #selector(endDraggingDetected))
+        if #available(iOS 16.4, *) {
+            super.isInspectable = true
+        }
     }
     
     override public var frame: CGRect {
