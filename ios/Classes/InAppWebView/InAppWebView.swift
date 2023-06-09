@@ -147,6 +147,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
         }
         self.contextMenu = contextMenu
         self.initialUserScripts = userScripts
+        self.keyboardDisplayRequiresUserAction = false
         uiDelegate = self
         navigationDelegate = self
         scrollView.delegate = self
