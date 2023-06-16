@@ -1,7 +1,17 @@
+## 6.0.0-beta.25
+
+- Merged "feat: InAppLocalhostServer decode assets url when loading them" [#1657](https://github.com/pichillilorenzo/flutter_inappwebview/pull/1657) (thanks to [Nirajn2311](https://github.com/Nirajn2311))
+
+## 6.0.0-beta.24+1
+
+- Fixed "Can't compile on Android" [#1691](https://github.com/pichillilorenzo/flutter_inappwebview/issues/1691)
+
 ## 6.0.0-beta.24
 
 - Added InAppWebView keep alive feature
+- Added InAppBrowser menu items feature
 - Added `hasJavaScriptHandler`, `hasUserScript`, `hasWebMessageListener` InAppWebViewController methods
+- Added `hideCloseButton`, `hideDefaultMenuItems`, `menuButtonColor` InAppBrowser settings
 - `HeadlessInAppWebView.webViewController` could be `null`
 - Removed `throwIfAlreadyOpened`, `throwIfNotOpened` InAppBrowser methods
 - Removed `throwIfAlreadyOpened`, `throwIfNotOpened` ChromeSafariBrowser methods
